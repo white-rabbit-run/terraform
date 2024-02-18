@@ -2,7 +2,6 @@ resource "aws_ebs_volume" "ebs" {
   availability_zone = "af-south-1a"
   size              = 128
   encrypted         = true
-  snapshot_id       = "snap-010540bcca758c377"
 
   tags = merge({ Name = "EBS Volume" }, local.common_tags)
 }
